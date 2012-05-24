@@ -16,5 +16,8 @@ Outline for Presentation (2012-05-30)
 1. About Webfonts (@font-face)
 	1. New technology that makes font use easy and secure
 	1. Took improvements in fonts and browsers
-	1. Can now add 
+	1. Can now change fonts as easily as colors
 	1. I first wrote about this two years ago [http://www.ls-unscripted.com/index.php/2010/03/23/web-fonts-my-journey-to-good-enough-for-now/]
+1. Demo
+	1. This sentence uses the old, web-safe font, Verdana.
+	1. This sentence uses a webfont called "Tangerine".
