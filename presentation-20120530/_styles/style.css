@@ -1,4 +1,5 @@
 /* HTML5 Boilerplate  */
+@import url(http://fonts.googleapis.com/css?family=Eater);
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -64,24 +65,8 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
-
-
-
-.taganatomy { list-style: none; }
-.deck-container .taganatomy li { font-size: 200%; }
-.tagname { color: purple; }
-.attributename { color: green; }
-.attributevalue { color: navy; }
-.tagcontent { color: silver; }
-.slide em.answer { font-style: normal; color: black; }
-
-
-
-
-@media only screen and (min-width: 35em) {
-  
-
-}
+.verdana { font-family: Verdana !important; }
+.eater { font-family: Eater !important; }
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
