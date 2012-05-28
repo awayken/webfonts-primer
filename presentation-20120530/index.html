@@ -30,61 +30,75 @@
 		<section class="slide" id="print-easy">
 			<h2>Print Has It Easy</h2>
 			<ul>
-				<li>Pretty typefaces make designers happy</li>
-				<li>Well-made typefaces make customers happy</li>
-				<li>Font licensing technology makes foundries happy</li>
+				<li class="slide">Pretty typefaces make designers happy</li>
+				<li class="slide">Well-made typefaces make customers happy</li>
+				<li class="slide">Font licensing technology makes foundries happy</li>
+				<li class="slide">No developers to keep happy</li>
 			</ul>
 		</section>
 
 		<section class="slide" id="web-hard">
 			<h2>Web Has It Hard</h2>
 			<ul>
-				<li>"Web safe" typefaces make designers bored</li>
-				<li>Inconsistent typefaces make customers confused</li>
-				<li>Previous font licensing technology makes foundries uneasy</li>
-				<li>Previous font licensing technology makes developers frustrated</li>
+				<li class="slide">"Web safe" typefaces make designers bored</li>
+				<li class="slide">Inconsistent quality in typefaces make customers confused</li>
+				<li class="slide">Web-specific font licensing technology makes foundries uneasy</li>
+				<li class="slide">Web-specific font licensing technology makes developers frustrated</li>
 			</ul>
 		</section>
 
 		<section class="slide" id="what-to-do">
 			<h2>What to do?</h2>
-			<ul>
-				<li>How do we get typefaces that make designers, customers, foundries, and developers all happy at the same time?</li>
-				<li>Webfonts (@font-face)</li>
-			</ul>
+
+			<p class="slide">How do we get typefaces that make designers, customers, foundries, and developers all happy at the same time?</p>
+
+			<p class="slide eater"><strong>Webfonts</strong>!</p>
 		</section>
 
 		<section class="slide" id="about-webfonts">
 			<h2>About Webfonts (@font-face)</h2>
 			<ul>
-				<li>New technology that makes font use easy and secure</li>
-				<li>Took improvements in fonts and browsers</li>
-				<li>Can now change fonts as easily as colors</li>
-				<li><a href="http://www.ls-unscripted.com/index.php/2010/03/23/web-fonts-my-journey-to-good-enough-for-now/" target="_blank" title="Web Fonts: My Journey to &lsquo;Good Enough for Now&rsquo;">I first wrote about this</a> two years ago</li>
+				<li class="slide">New technology that makes font embedding easy and secure</li>
+				<li class="slide">It took improvements in fonts and browsers</li>
+				<li class="slide">Websites can now change fonts as easily as colors</li>
+				<li class="slide"><a href="http://www.ls-unscripted.com/index.php/2010/03/23/web-fonts-my-journey-to-good-enough-for-now/" target="_blank" title="Web Fonts: My Journey to &lsquo;Good Enough for Now&rsquo;">I first wrote about this</a> two years ago</li>
 			</ul>
 		</section>
 
 		<section class="slide" id="benefits-of-webfonts">
 			<h2>Benefits of Webfonts</h2>
 			<ul>
-				<li>No creating images for fancy headlines</li>
-				<li>Better typography</li>
-				<li>Easy update and maintenance</li>
-				<li>Faster load time</li>
+				<li class="slide">No more images for fancy headlines!</li>
+				<li class="slide">Better typography</li>
+				<li class="slide">Easy update and maintenance</li>
+				<li class="slide">Faster load time</li>
+				<li class="slide">Better <abbr title="Search engine optimization">SEO</abbr></li>
 			</ul>
 		</section>
 
 		<section class="slide" id="demo">
 			<h2>Demo</h2>
+
+			<p class="slide verdana">This sentence uses a web-safe font called Verdana.</p>
+
+			<p class="slide eater">This sentence uses a webfont called "Eater".</p>
+
+		</section>
+
+		<section class="slide" id="examples">
+			<h2>Examples</h2>
 			<ul>
-				<li class="verdana">This sentence uses a web-safe font called Verdana.</li>
-				<li class="eater">This sentence uses a webfont called "Eater".</li>
-				<li>Also, <a href="http://www.google.com/webfonts/specimen/Cabin+Condensed" target="_blank" title="Cabin Condensed">this presentation</a>!</li>
+				<li><a href="">Herbert Condensed</a> in <a href="http://www.l-s.com" target="_blank">L&amp;S</a> (self-hosted)</li>
+				<li><a href="">Din</a> in <a href="http://sanfordresearch.org" target="_blank">Sanford Research</a> (<a href="">Fontdeck</a>)</li>
+				<li><a href="">Something</a> in <a href="http://xisnext.com" target="_blank">XisNext.com</a> (self-hosted)</li>
+				<li><a href="http://www.google.com/webfonts/specimen/Cabin+Condensed" target="_blank" title="Cabin Condensed">Cabin Condensed</a> in this presentation (<a href="http://www.google.com/webfonts/">Google webfonts</a>)</li>
 			</ul>
 		</section>
 
 		<section class="slide" id="code">
 			<h2>Code</h2>
+
+			<div>Embed the font (self-hosted)</div>
 			<pre><code>@font-face {
 	font-family: 'Megalopolis';
 	src: url('fonts/megalopolisextra-webfont.eot');
@@ -95,34 +109,37 @@
 	font-weight: normal;
 	font-style: normal;
 }</code></pre>
+
+			<div>Use the font</div>
+			<pre><code>h1 { font-family: 'Megalopolis', serif; }</code></pre>
 		</section>
 
 		<section class="slide" id="guidelines">
-			<h2>Guidelines</h2>
+			<h2>Guidelines and Caveats</h2>
 			<ul>
-				<li>Most foundries require additional web license</li>
-				<li>Searching for "look-a-likes" painstaking</li>
-				<li>Have a back-up in mind</li>
-				<li>No good mocking options for paid services</li>
+				<li class="slide">Most foundries require additional web license</li>
+				<li class="slide">Searching for "look-a-likes" is painstaking</li>
+				<li class="slide">Have a "web safe" back-up in mind</li>
+				<li class="slide">No good mocking options for paid services</li>
 			</ul>
 		</section>
 
 		<section class="slide" id="find-webfonts">
 			<h2>Find Webfonts</h2>
 			<ul>
-				<li>Paid Options
+				<li class="slide">Paid Options
 				<ul>
 					<li><a href="https://typekit.com/">Typekit (by Adobe)</a></li>
 					<li><a href="http://www.fontspring.com/fontface">FontSpring</a></li>
 					<li><a href="http://www.ascenderfonts.com/webfonts/">Ascender Fonts</a></li>
 				</ul>
-				<li>Free Options
+				<li class="slide">Free Options
 				<ul>
 					<li><a href="http://www.fontsquirrel.com/">FontSquirrel</a></li>
 					<li><a href="http://www.google.com/webfonts">Google web fonts</a></li>
 				</ul>
 				</li>
-				<li>&amp; more</li>
+				<li class="slide">&amp; more</li>
 			</ul>
 		</section>
 		
