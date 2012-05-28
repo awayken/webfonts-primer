@@ -66,7 +66,7 @@ td { vertical-align: top; }
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 .verdana { font-family: Verdana !important; }
-.eater { font-family: Eater !important; }
+.eater { font-family: Eater, arial, sans-serif !important; }
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
