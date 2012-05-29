@@ -1,0 +1,169 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>A WebFonts Primer (2012-05-30)</title>
+		<meta name="description" content="A WebFonts Primer, given as an internal presentation to Lawrence &amp; Schiller on 2012-05-30.">
+		
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="_styles/style.css">
+		
+	<!-- deck.js -->
+		<link rel="stylesheet" href="../_scripts/deck.js/core/deck.core.css">
+		<link rel="stylesheet" href="../_scripts/deck.js/extensions/hash/deck.hash.css">
+		<link rel="stylesheet" href="../_styles/deck.js/themes/style/ls.css">
+		<link rel="stylesheet" href="../_styles/deck.js/themes/transition/horizontal-slide.css">
+		
+		<script src="../_scripts/libs/modernizr-2.5.3.min.js"></script>
+	</head>
+	<body class="deck-container">
+		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+		
+		<section class="slide" id="title-slide">
+			<h1>A WebFonts Primer</h1>
+		</section>
+
+		<section class="slide" id="print-easy">
+			<h2>Print Has It Easy</h2>
+			<ul>
+				<li class="slide">Pretty typefaces make designers happy</li>
+				<li class="slide">Well-made typefaces make customers happy</li>
+				<li class="slide">Font licensing technology makes foundries happy</li>
+				<li class="slide">No developers to keep happy</li>
+			</ul>
+		</section>
+
+		<section class="slide" id="web-hard">
+			<h2>Web Has It Hard</h2>
+			<ul>
+				<li class="slide">"Web safe" typefaces make designers bored</li>
+				<li class="slide">Inconsistent quality in typefaces make customers confused</li>
+				<li class="slide">Web-specific font licensing technology makes foundries uneasy</li>
+				<li class="slide">Web-specific font licensing technology makes developers frustrated</li>
+			</ul>
+		</section>
+
+		<section class="slide" id="what-to-do">
+			<h2>What to do?</h2>
+
+			<p class="slide">How do we get typefaces that make designers, customers, foundries, and developers all happy at the same time?</p>
+
+			<p class="slide eater"><strong>Webfonts</strong>!</p>
+		</section>
+
+		<section class="slide" id="about-webfonts">
+			<h2>About Webfonts (@font-face)</h2>
+			<ul>
+				<li class="slide">New technology that makes font embedding easy and secure</li>
+				<li class="slide">It took improvements in fonts and browsers</li>
+				<li class="slide">Websites can now change fonts as easily as colors</li>
+				<li class="slide"><a href="http://www.ls-unscripted.com/index.php/2010/03/23/web-fonts-my-journey-to-good-enough-for-now/" target="_blank" title="Web Fonts: My Journey to &lsquo;Good Enough for Now&rsquo;">I first wrote about this</a> two years ago</li>
+			</ul>
+		</section>
+
+		<section class="slide" id="benefits-of-webfonts">
+			<h2>Benefits of Webfonts</h2>
+			<ul>
+				<li class="slide">No more images for fancy headlines!</li>
+				<li class="slide">Better typography</li>
+				<li class="slide">Easy update and maintenance</li>
+				<li class="slide">Faster load time</li>
+				<li class="slide">Better <abbr title="Search engine optimization">SEO</abbr></li>
+			</ul>
+		</section>
+
+		<section class="slide" id="demo">
+			<h2>Demo</h2>
+
+			<p class="slide verdana">This sentence uses a web-safe font called Verdana.</p>
+
+			<p class="slide eater">This sentence uses a webfont called "Eater".</p>
+
+		</section>
+
+		<section class="slide" id="examples">
+			<h2>Examples</h2>
+			<ul>
+				<li><a href="http://www.rubicon.ca/samp_pg6.htm">Hilbert Condensed</a> in <a href="http://www.l-s.com" target="_blank">L&amp;S</a> (self-hosted)</li>
+				<li><a href="http://fontdeck.com/typeface/dindisplaypro">Din Display Pro</a> in <a href="http://sanfordresearch.org" target="_blank">Sanford Research</a> (<a href="http://fontdeck.com/">Fontdeck</a>)</li>
+				<li><a href="http://www.fontsquirrel.com/fonts/nevis">Nevis</a> in <a href="http://xisnext.com" target="_blank">XisNext.com</a> (self-hosted)</li>
+				<li><a href="http://www.google.com/webfonts/specimen/Cabin+Condensed">Cabin Condensed</a> in this presentation (<a href="http://www.google.com/webfonts/">Google webfonts</a>)</li>
+			</ul>
+		</section>
+
+		<section class="slide" id="code">
+			<h2>Code</h2>
+
+			<div>Embed the font (self-hosted)</div>
+			<pre><code>@font-face {
+	font-family: 'Megalopolis';
+	src: url('fonts/megalopolisextra-webfont.eot');
+	src: url('fonts/megalopolisextra-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/megalopolisextra-webfont.woff') format('woff'),
+	     url('fonts/megalopolisextra-webfont.ttf') format('truetype'),
+	     url('fonts/megalopolisextra-webfont.svg#MEgalopolisExtraRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}</code></pre>
+
+			<div>Use the font</div>
+			<pre><code>h1 { font-family: 'Megalopolis', serif; }</code></pre>
+		</section>
+
+		<section class="slide" id="guidelines">
+			<h2>Guidelines and Caveats</h2>
+			<ul>
+				<li class="slide">Most foundries require additional web license</li>
+				<li class="slide">Searching for "look-a-likes" is painstaking</li>
+				<li class="slide">Have a "web safe" back-up in mind</li>
+				<li class="slide">No good mocking options for paid services</li>
+			</ul>
+		</section>
+
+		<section class="slide" id="find-webfonts">
+			<h2>Find Webfonts</h2>
+			<ul>
+				<li class="slide">Paid Options
+				<ul>
+					<li><a href="https://typekit.com/">Typekit (by Adobe)</a></li>
+					<li><a href="http://www.fontspring.com/fontface">FontSpring</a></li>
+					<li><a href="http://www.ascenderfonts.com/webfonts/">Ascender Fonts</a></li>
+					<li><a href="http://fontdeck.com/">Fontdeck</a></li>
+				</ul>
+				<li class="slide">Free Options
+				<ul>
+					<li><a href="http://www.fontsquirrel.com/">FontSquirrel</a></li>
+					<li><a href="http://www.google.com/webfonts">Google web fonts</a></li>
+					<li><a href="http://www.myfonts.com/search/lowest_price%3A0+is_webfont%3Atrue/fonts/">MyFonts (free)</a></li>
+				</ul>
+				</li>
+				<li class="slide">&amp; more</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="title-questions">
+			<h1>Questions or Examples?</h1>
+		</section>
+		
+		<section class="slide" id="title-thanks">
+			<h1>Thanks!</h1>
+		</section>
+		
+		<!-- deck.hash snippet -->
+		<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../_scripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
+		
+		<!-- deck.js -->
+		<script src="../_scripts/deck.js/core/deck.core.js"></script>
+		<script src="../_scripts/deck.js/extensions/hash/deck.hash.js"></script>
+		
+		<script src="_scripts/plugins.js"></script>
+		<script src="_scripts/script.js"></script>
+	</body>
+</html>
